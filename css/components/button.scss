@@ -10,11 +10,14 @@
   border-radius: var(--radius-full);
   text-decoration: none;
   transition: 0.2s;
-}
-.action-button-primary:hover, .action-button-primary:focus-visible {
-  background-color: var(--color-background-accent-hover);
-  text-decoration: none;
-}
-.action-button-primary:active {
-  background-color: var(--color-background-accent-active);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-background-accent-hover);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: var(--color-background-accent-active);
+  }
 }
