@@ -21,6 +21,39 @@ play上下载。</p>
       </tags>
   </entry>
   <entry>
+    <title>try</title>
+    <url>/2025/01/14/try/</url>
+    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = int(input())</span><br><span class="line">b = a.sort()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>try</p>
+</blockquote>
+<ul class="task-list">
+<li><p><label><input type="checkbox" />liebiao</label></p></li>
+<li><p><label><input type="checkbox"
+checked="" />liebiao</label></p></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = map(int,input().split())</span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">a = map(int,input().split())</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\dfrac{1}{\sum x}
+\]</span></p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>b</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+  </entry>
+  <entry>
     <title>七年</title>
     <url>/2024/12/01/%E4%B8%83%E5%B9%B4/</url>
     <content><![CDATA[<p>我选择将对七年的测评作为第一篇博客，或许该站会变成个人的游戏评价收集处。(笑)</p>
