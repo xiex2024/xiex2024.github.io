@@ -114,9 +114,13 @@ moon》还差；我无意将它的剧情封神，但至少在我这里，它的�
 <p>《画中世界》 可玩性：5/5 音乐：4/5 画面：4.5/5 剧情：3/5
 总评：4.5/5</p>
 <p><img src="Screenshot_20230604_171258_com.xd.gorogoa.tap.jpg" /></p>
-<video src="SVID_20230604_171538_1.mp4">
+<video muted autoplay="autoplay" loop="loop">
+<source src="SVID_20230604_171538_1.mp4" type="video/mp4">
+</source>
 </video>
-<video src="SVID_20230604_171301_1.mp4">
+<video muted autoplay="autoplay" loop="loop">
+<source src="SVID_20230604_171301_1.mp4" type="video/mp4">
+</source>
 </video>
 ]]></content>
       <categories>
