@@ -23,8 +23,6 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"homepage.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fademInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-
     <meta property="og:type" content="blog">
 <meta property="og:title" content="榭的博客">
 <meta property="og:url" content="http://homepage.com/archives/index.html">
@@ -385,41 +383,6 @@
     </span>
 </div>
 
-<script>
-  new live2d-widget({
-    model: {
-      jsonPath: '/source/live2d_models/知更鸟/知更鸟.model3.json',  //路径指向你上传的模型文件
-      scale: 1.0  // 模型的缩放比例，可以根据需要调整
-    },
-    display: {
-      position: 'right',  // 控制模型显示的位置，'right' 右侧，'left' 左侧
-      width: 150,         // 控制模型的宽度
-      height: 300,        // 控制模型的高度
-      hOffset: 0,         // 水平偏移
-      vOffset: 0          // 垂直偏移
-    },
-    expressions: [
-      { name: '麦克风', file: '/source/live2d_models/知更鸟/麦克风.exp3.json' },  // 麦克风表情
-      { name: '捂胸', file: '/source/live2d_models/知更鸟/捂胸.exp3.json' },      // 捂胸表情
-      { name: '拿酒杯', file: '/source/live2d_models/知更鸟/拿酒杯.exp3.json' }   // 拿酒杯表情
-    ]
-  });
-</script>
-
-<script>
-  document.addEventListener("keydown", function(event) {
-    if (event.key === '1') {
-      // 当按下 '1' 键时触发 "麦克风" 表情
-      live2dWidget.toggleExpression('麦克风');
-    } else if (event.key === '2') {
-      // 当按下 '2' 键时触发 "捂胸" 表情
-      live2dWidget.toggleExpression('捂胸');
-    } else if (event.key === '3') {
-      // 当按下 '3' 键时触发 "拿酒杯" 表情
-      live2dWidget.toggleExpression('拿酒杯');
-    }
-  });
-</script>
 
     </div>
   </footer>
@@ -476,5 +439,5 @@
 <script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"xiex2024","repo":"xiex2024.github.io","client_id":"Ov23li49DoR0E9MU6nSd","client_secret":"6fb0b05de52db9d56363fa5b306a4c88068a22ea","admin_user":"xiex2024","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"b86805e3c045105f4f74c304744b551e"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
-</body>
+<!-- hexo injector body_end start --><script data-pjax src="https://unpkg.com/oh-my-live2d"></script><script>const oml2d = OML2D.loadOml2d({dockedPosition:"right",mobileDisplay:false,models:[{"path":"\\live2d_models\\zhigengniao\\zhigengniao.model3.json","position":[-60,35],"scale":0.15,"stageStyle":{"width":250,"height":250},"mobilePosition":[-10,23],"mobileScale":0.1,"mobileStageStyle":{"width":180,"height":166},"motionPreloadStrategy":"ALL"}],parentElement:document.body,primaryColor:"var(--btn-bg)",sayHello:false,tips:{style: {"width":230,"height":120,"left":"calc(50% - 20px)","top":"-100px"},mobileStyle: {"width":180,"height":80,"left":"calc(50% - 30px)","top":"-100px"}}});</script><!-- hexo injector body_end end --></body>
 </html>
