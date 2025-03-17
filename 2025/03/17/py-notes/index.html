@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/black/pace-theme-center-atom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"homepage.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fademInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+
+    <meta name="description" content="字符串处理 12345678s &#x3D; &#x27;xiex&#x27;s1 &#x3D; s.center(2)print(s1)#数字小于字符串长度则不做处理s2 &#x3D; s.center(7)print(s2.index(&#x27;x&#x27;))#若填充数为奇数则左侧多一个print(s.center(20))#居中并填充使总长度为20print(s.ljust(20))#左对齐并填充print(">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="py_notes">
+<meta property="og:url" content="http://homepage.com/2025/03/17/py-notes/index.html">
+<meta property="og:site_name" content="榭的博客">
+<meta property="og:description" content="字符串处理 12345678s &#x3D; &#x27;xiex&#x27;s1 &#x3D; s.center(2)print(s1)#数字小于字符串长度则不做处理s2 &#x3D; s.center(7)print(s2.index(&#x27;x&#x27;))#若填充数为奇数则左侧多一个print(s.center(20))#居中并填充使总长度为20print(s.ljust(20))#左对齐并填充print(">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://homepage.com/2025/03/17/py-notes/image-20250316214546049.png">
+<meta property="og:image" content="http://homepage.com/2025/03/17/py-notes/image-20250316220244264.png">
+<meta property="og:image" content="http://homepage.com/2025/03/17/py-notes/image-20250317153318112.png">
+<meta property="article:published_time" content="2025-03-17T13:17:01.000Z">
+<meta property="article:modified_time" content="2025-03-17T13:19:41.718Z">
+<meta property="article:author" content="榭">
+<meta property="article:tag" content="learn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://homepage.com/2025/03/17/py-notes/image-20250316214546049.png">
+
+
+<link rel="canonical" href="http://homepage.com/2025/03/17/py-notes/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://homepage.com/2025/03/17/py-notes/","path":"2025/03/17/py-notes/","title":"py_notes"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>py_notes | 榭的博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">榭的博客</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">for freedom and life</p>
+      <img class="custom-logo-image" src="/images/logo.png" alt="榭的博客">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-friends"><a href="/friends/" rel="section"><i class="fa fa-user-group fa-fw"></i>friends</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">字符串处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E8%BF%90%E7%AE%97%E5%92%8C%E5%A4%84%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">集合运算和处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E5%85%B8%E5%A4%84%E7%90%86"><span class="nav-number">3.</span> <span class="nav-text">字典处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%BA%E4%B8%BA%E6%8A%9B%E5%87%BA%E4%B8%80%E6%9D%A1%E5%BC%82%E5%B8%B8%E4%BF%A1%E6%81%AF"><span class="nav-number">4.</span> <span class="nav-text">人为抛出一条异常信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="nav-number">5.</span> <span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%85%E7%9B%B8%E7%AD%89%E4%B8%8E%E6%B7%B1%E7%9B%B8%E7%AD%89"><span class="nav-number">5.1.</span> <span class="nav-text">浅相等与深相等</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E4%BB%A5%E9%80%BB%E8%BE%91%E9%97%A8%E4%B8%BA%E4%BE%8B"><span class="nav-number">5.2.</span> <span class="nav-text">继承：以逻辑门为例</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%97%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%92%E5%BD%92"><span class="nav-number">6.1.</span> <span class="nav-text">递归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="nav-number">6.2.</span> <span class="nav-text">动态规划</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="榭"
+      src="/images/OIP.jpg">
+  <p class="site-author-name" itemprop="name">榭</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xiex2024" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xiex2024" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xh.x24248@qq.com" title="E-Mail → mailto:xh.x24248@qq.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/zheidh" title="Zhihu → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;zheidh" rel="noopener me" target="_blank"><i class="fab fa-zhihu fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://homepage.com/2025/03/17/py-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jpg">
+      <meta itemprop="name" content="榭">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="榭的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="py_notes | 榭的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          py_notes
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2025-03-17 21:17:01 / Modified: 21:19:41" itemprop="dateCreated datePublished" datetime="2025-03-17T21:17:01+08:00">2025-03-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>8.1k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>15 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><span id="more"></span>
+<h1 id="字符串处理">字符串处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">s = &#x27;xiex&#x27;</span><br><span class="line">s1 = s.center(2)</span><br><span class="line">print(s1)#数字小于字符串长度则不做处理</span><br><span class="line">s2 = s.center(7)</span><br><span class="line">print(s2.index(&#x27;x&#x27;))#若填充数为奇数则左侧多一个</span><br><span class="line">print(s.center(20))#居中并填充使总长度为20</span><br><span class="line">print(s.ljust(20))#左对齐并填充</span><br><span class="line">print(s.rjust(20))#右对齐并填充</span><br></pre></td></tr></table></figure>
+<h1 id="集合运算和处理">集合运算和处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setA = &#123;2,1,3&#125;;setB = &#123;3,4,5&#125;</span><br><span class="line">print(setA|setB)#并集，运算。而A.union(B)作为方法有同样的功能</span><br><span class="line">print(setA&amp;setB)#交集，A.intersectiom(B)</span><br><span class="line">print(setA-setB)#仅出现于setA的元素</span><br><span class="line">print(setA&lt;=setB)#setA是否包含于setB</span><br><span class="line">print(&#123;1,2,3,4,5&#125;.pop())#“随机”移除，但实际删除集合中的“第一个”元素，由于集合的无序性而称为随机，例如纯数字是会输出最小的</span><br><span class="line">print(&#123;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;,&#x27;e&#x27;,&#x27;f&#x27;,&#x27;g&#x27;&#125;.pop())#此处即为随机</span><br></pre></td></tr></table></figure>
+<h1 id="字典处理">字典处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;1:4,&#x27;a&#x27;:&#x27;c&#x27;&#125;</span><br><span class="line">print(&#x27;c&#x27; in dict ,1 in dict)#直接用in所查找的是是否在索引中</span><br><span class="line">itemdict = &#123;&quot;item&quot;:&quot;banana&quot;,&quot;cost&quot;:24&#125;</span><br><span class="line">print(&quot;The %(item)s costs %(cost)7.1f cents&quot; % itemdict)# %(name)d可以获取字典中name所代表的值</span><br></pre></td></tr></table></figure>
+<h1 id="人为抛出一条异常信息">人为抛出一条异常信息</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">anumber = int(input())</span><br><span class="line">if anumber &lt; 0:</span><br><span class="line">    raise RuntimeError(&quot;You can&#x27;t use a negative number&quot;)</span><br><span class="line"></span><br><span class="line">from math import sqrt</span><br><span class="line">def squareroot(n):#牛顿法求平方根</span><br><span class="line">    root = n/2 #initial guess will be 1/2 of n</span><br><span class="line">    for k in range(20):</span><br><span class="line">        root = (1/2)*(root + (n / root))</span><br><span class="line">    return root</span><br><span class="line">print((squareroot(5)-sqrt(5))*(10**10))</span><br></pre></td></tr></table></figure>
+<h1 id="面向对象">面向对象</h1>
+<p>python为所有的类提供了一套标准的工作方法，但可能在一些情况下没有正常工作，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class fraction:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">print(fraction(2,5))#返回指向的地址字符串</span><br></pre></td></tr></table></figure>
+<p>此处__str__方法即为内置的方法，指示了如何将对象转化为字符串</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class fraction1:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">    def __str__(self):</span><br><span class="line">        return str(self.top)+&quot;/&quot;+str(self.bottom)</span><br><span class="line">    def __add__(self,other):#加法运算</span><br><span class="line">        top1 = self.top*other.bottom + \</span><br><span class="line">               other.top*self.bottom#\可以作为续行符</span><br><span class="line">        bottom1 = self.bottom*other.bottom</span><br><span class="line">        return fraction1(top1,bottom1)#可以加入用找最小公倍数的方法化简来优化,但这部分的重点不在此处</span><br><span class="line">print(fraction1(2,5))</span><br><span class="line">print(fraction1(2,5).__str__())</span><br><span class="line">print(str(fraction1(2,5)))</span><br><span class="line">print(fraction1(1,2)+fraction1(1,5))</span><br></pre></td></tr></table></figure>
+<h2 id="浅相等与深相等">浅相等与深相等</h2>
+<p>对于两个对象来说，直接==比较是比较两者是否引用了同一个对象，而非对值的比较</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a = fraction1(3,5)</span><br><span class="line">b = fraction1(3,5)</span><br><span class="line">print(a==b)</span><br><span class="line">#建立__eq__方法，进行值的比较</span><br><span class="line">class frac:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">    def __eq__(self, other):</span><br><span class="line">        return self.top == other.top and self.bottom == other.bottom#仍不完善，可能输入的并非最简分数</span><br><span class="line">a = frac(3,5)</span><br><span class="line">b = frac(3,5)</span><br><span class="line">print(a==b)</span><br></pre></td></tr></table></figure>
+<p>fraction的完整实现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">def gcd(m,n):</span><br><span class="line">    while m%n != 0:</span><br><span class="line">        oldm = m</span><br><span class="line">        oldn = n</span><br><span class="line"></span><br><span class="line">        m = oldn</span><br><span class="line">        n = oldm%oldn</span><br><span class="line">    return n</span><br><span class="line">class Fraction:</span><br><span class="line">    def __init__(self, top, bottom):</span><br><span class="line">        self.num = top</span><br><span class="line">        self.den = bottom</span><br><span class="line"></span><br><span class="line">    def __str__(self):</span><br><span class="line">        return str(self.num) + &quot;/&quot; + str(self.den)</span><br><span class="line"></span><br><span class="line">    def show(self):</span><br><span class="line">        print(self.num, &quot;/&quot;, self.den)</span><br><span class="line"></span><br><span class="line">    def __add__(self, otherfraction):</span><br><span class="line">        newnum = self.num * otherfraction.den + \</span><br><span class="line">        self.den * otherfraction.num</span><br><span class="line">        newden = self.den * otherfraction.den</span><br><span class="line">        common = gcd(newnum, newden)</span><br><span class="line">        return Fraction(newnum//common, newden//common)</span><br><span class="line"></span><br><span class="line">    def __eq__(self, other):</span><br><span class="line">        firstnum = self.num * other.den</span><br><span class="line">        secondnum = other.num * self.den</span><br><span class="line">        return firstnum == secondnum</span><br></pre></td></tr></table></figure>
+<h2 id="继承以逻辑门为例">继承：以逻辑门为例</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line">class LogicGate:#超类LogicGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        self.label = n</span><br><span class="line">        self.output = None</span><br><span class="line">    def getLabel(self):</span><br><span class="line">        return self.label</span><br><span class="line">    def getOutput(self):</span><br><span class="line">        self.output = self.performGateLogic()</span><br><span class="line">        return self.output</span><br><span class="line"></span><br><span class="line">class BinaryGate(LogicGate):#有两个输入的门（与&amp;或门），继承LogicGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)#先调用父类的构造方法</span><br><span class="line"></span><br><span class="line">        self.pinA = None</span><br><span class="line">        self.pinB = None</span><br><span class="line"></span><br><span class="line">    def getPinA(self):</span><br><span class="line">        if self.pinA is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin A: input for gate&#x27; + \</span><br><span class="line">                            self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pinA.getFrom().getOutput()</span><br><span class="line">    def getPinB(self):</span><br><span class="line">        if self.pinB is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin B: input for gate&#x27; + \</span><br><span class="line">                         self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pinB.getFrom().getOutput()</span><br><span class="line"></span><br><span class="line">class UnaryGate(LogicGate):#非门</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">        self.pin = None</span><br><span class="line">    def getPin(self):</span><br><span class="line">        if self.pin is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin: input for gate &#x27; + self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pin.getFrom().getOutput()#即返回连接器所连接的上一个类的输出</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class AndGate(BinaryGate):#与门，继承BinaryGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        a = self.getPinA()</span><br><span class="line">        b = self.getPinB()</span><br><span class="line">        if a==1 and b==1:</span><br><span class="line">            return 1</span><br><span class="line">        else:</span><br><span class="line">            return 0</span><br><span class="line"></span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">    # 在BinaryGate 类中，逻辑门有两个输入，但连接器必须只连接其中一个。如果两个都能连接，那么默认选择pinA。如果pinA 已经有了连接，就选择pinB。如果两个输入都已有连接，则无法连接逻辑门。</span><br><span class="line">        if self.pinA == None:</span><br><span class="line">            self.pinA = source</span><br><span class="line">        else:</span><br><span class="line">            if self.pinB == None:</span><br><span class="line">                self.pinB = source</span><br><span class="line">            else:</span><br><span class="line">                raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line"># g1 = AndGate(&#x27;G1&#x27;)</span><br><span class="line"># print(g1.getOutput())</span><br><span class="line"></span><br><span class="line">class OrGate(BinaryGate):#与门，继承BinaryGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        a = self.getPinA()</span><br><span class="line">        b = self.getPinB()</span><br><span class="line">        if a==0 and b==0:</span><br><span class="line">            return 0</span><br><span class="line">        else:</span><br><span class="line">            return 1</span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">        if self.pinA == None:</span><br><span class="line">            self.pinA = source</span><br><span class="line">        else:</span><br><span class="line">            if self.pinB == None:</span><br><span class="line">                self.pinB = source</span><br><span class="line">            else:</span><br><span class="line">                raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class NotGate(UnaryGate):</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        pin = self.getPin()</span><br><span class="line">        if pin == 1:</span><br><span class="line">            return 0</span><br><span class="line">        else:</span><br><span class="line">            return 1</span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">        if self.pin == None:</span><br><span class="line">            self.pin = source</span><br><span class="line">        else:</span><br><span class="line">            raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line">class Connector:#连接两个逻辑门，内部包含LogicGate的实例但不在继承关系中</span><br><span class="line">    def __init__(self,fgate,tgate):</span><br><span class="line">        self.fromgate = fgate</span><br><span class="line">        self.togate = tgate</span><br><span class="line">        tgate.setNextPin(self)#此处传递参数self,即让tgate的值设定为连接器这个类的实例</span><br><span class="line"></span><br><span class="line">    def getFrom(self):</span><br><span class="line">        return self.fromgate</span><br><span class="line"></span><br><span class="line">    def getTO(self):</span><br><span class="line">        return self.togate</span><br><span class="line"></span><br><span class="line">g1 = AndGate(&quot;G1&quot;)</span><br><span class="line">g2 = AndGate(&quot;G2&quot;)</span><br><span class="line">g3 = OrGate(&quot;G3&quot;)</span><br><span class="line">g4 = NotGate(&quot;G4&quot;)</span><br><span class="line">c1 = Connector(g1,g3)</span><br><span class="line">c2 = Connector(g2,g3)</span><br><span class="line">c3 = Connector(g3,g4)</span><br><span class="line">print(g4.getOutput())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="算法">算法</h1>
+<h2 id="递归">递归</h2>
+<p>递归的三个原则为：</p>
+<p>①基本情况，即无需处理就可以直接return的情况</p>
+<p>②算法会改变待处理数据的状态，使其更接近于基本状态</p>
+<p>③调用自己</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def toStr(n,base):#递归示例，转换进制。</span><br><span class="line">    convertstring = &#x27;0123456789ABCDEF&#x27;</span><br><span class="line">    if n&lt;base:</span><br><span class="line">        return convertstring[n]</span><br><span class="line">    else:</span><br><span class="line">        return toStr(n//base,base)+convertstring[n%base]</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250316214546049.png" /></p>
+<p>基本状态为一位数，于是不断将原整数整除10</p>
+<p>用栈来储存结果，那么python会将函数的返回值储存在栈的顶端</p>
+<p><img src="image-20250316220244264.png" /></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rStack = Stack()#将储存的结果压入栈中</span><br><span class="line">def toStr(n, base):</span><br><span class="line">    convertString = &quot;0123456789ABCDEF&quot;</span><br><span class="line">    if n &lt; base:</span><br><span class="line">        rStack.push(convertString[n])</span><br><span class="line">    else:</span><br><span class="line">        rStack.push(convertString[n % base])</span><br><span class="line">        toStr(n // base, base)</span><br></pre></td></tr></table></figure>
+<p>示例：汉诺塔</p>
+<p>其基本思路是，若有n层，从a挪到c，那问题可以分解为：</p>
+<p>n-1层从a到b <span class="math inline">\(-&gt;\)</span> 1层从a到c
+<span class="math inline">\(-&gt;\)</span> n-1层从b到c</p>
+<p>代码如下（五层为例）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#汉诺塔</span><br><span class="line">def moveTower(height, fromPole, toPole, withPole):</span><br><span class="line">    if height &gt;= 1:</span><br><span class="line">        moveTower(height-1, fromPole, withPole, toPole)</span><br><span class="line">        moveDisk(fromPole, toPole)</span><br><span class="line">        moveTower(height-1, withPole, toPole, fromPole)</span><br><span class="line">def moveDisk(fromPole, toPole):</span><br><span class="line">    print(fromPole+&#x27;-&gt;&#x27;+toPole)</span><br><span class="line">moveTower(5,&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;)</span><br></pre></td></tr></table></figure>
+<h2 id="动态规划">动态规划</h2>
+<p>以找零钱为例，采用递归算法结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def recMC(coinValueList, change):</span><br><span class="line">	minCoins = change</span><br><span class="line">	if change in coinValueList:</span><br><span class="line">		return 1</span><br><span class="line">	else:</span><br><span class="line">		for i in [c for c in coinValueList if c &lt;= change]:</span><br><span class="line">			numCoins = 1 + recMC(coinValueList, change-i)</span><br><span class="line">			if numCoins &lt; minCoins:</span><br><span class="line">				minCoins = numCoins</span><br><span class="line">	return minCoins</span><br><span class="line"></span><br><span class="line">recMC([1, 5, 10, 25], 63)</span><br></pre></td></tr></table></figure>
+<p>问题分解为：（change-i）的最小硬币数+1，其中i为一枚硬币的面值，故而循环多次直到遍历每一种可能。</p>
+<p>该方法的问题在于有太多次对相同方案的遍历，如下图</p>
+<p><img src="image-20250317153318112.png" /></p>
+<p>相同的节点出现了多次，而每次出现都会进行完全一致而冗余的计算，这大大降低了算法的效率。</p>
+<p>对此我们进行“针对性”的优化，即用<code>knownResults</code>储存每个节点所对应的数值，在计算时先查找这个节点是否已被计算过，以减少冗余的计算。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">def recMC(coinValueList, change, knownResults):</span><br><span class="line">    minCoins = change</span><br><span class="line">    if change in coinValueList:</span><br><span class="line">        return 1</span><br><span class="line">    elif knownResults[change] &gt; 0:</span><br><span class="line">        return knownResults[change]</span><br><span class="line">    else:</span><br><span class="line">        for i in [c for c in coinValueList if c &lt;= change]:</span><br><span class="line">            numCoins = 1 + recMC(coinValueList, change-i, knownResults)</span><br><span class="line">            if numCoins &lt; minCoins:</span><br><span class="line">                minCoins = numCoins</span><br><span class="line">                knownResults[change] = numCoins</span><br><span class="line">    return minCoins</span><br><span class="line"></span><br><span class="line">recMC([1, 5, 10, 25], 63, [0]*64)</span><br></pre></td></tr></table></figure>
+<p>在这里介绍动态规划（dp），与上述算法不同，在这个问题上，递归采用了更为系统的储存方式，其会储存从1开始一直到change的每一个值对应的最少硬币数。</p>
+<p>对于每一个值，其需要硬币的最小值，来自于这个值减去一个硬币的面值后所有情况的最小值+1。如对于（11）来说，为（1）+1，（6）+1，（10）+1，分别对应减去的硬币为10，5，1的情况，因此代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def dpMakeChange(coinValueList, change, minCoins):</span><br><span class="line">    for cents in range(change+1):</span><br><span class="line">        coinCount = cents</span><br><span class="line">        for j in [c for c in coinValueList if c &lt;= cents]:</span><br><span class="line">            if minCoins[cents-j] + 1 &lt; coinCount:</span><br><span class="line">                coinCount = minCoins[cents - j]+1</span><br><span class="line">            minCoins[cents] = coinCount</span><br><span class="line">    return minCoins[change]</span><br></pre></td></tr></table></figure>
+<p>如果我们需要得到对于每一个值，在硬币数量最少的情况下所有硬币的面值，我们实际上只需要储存新增的硬币的面值即可递推得到所有的面值，修改代码如下；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def dpMakeChange(coinValueList, change, minCoins, coinsUsed):</span><br><span class="line">    for cents in range(change + 1):</span><br><span class="line">        coinCount = cents</span><br><span class="line">        newcoin = 1</span><br><span class="line">        for j in [c for c in coinValueList if c &lt;= cents]:</span><br><span class="line">            if minCoins[cents - j] + 1 &lt; coinCount:</span><br><span class="line">                coinCount = minCoins[cents - j] + 1</span><br><span class="line">                newcoin = j</span><br><span class="line">            minCoins[cents] = coinCount</span><br><span class="line">            coinsUsed[cents] = newcoin</span><br><span class="line">    return minCoins[change]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def printcoins(change, coinsUsed):</span><br><span class="line">    while change &gt; 0:</span><br><span class="line">        print(coinsUsed[change],end = &#x27; &#x27;)</span><br><span class="line">        change -= coinsUsed[change]</span><br><span class="line"></span><br><span class="line">coinsUsed = [0]*64</span><br><span class="line">minCoins = [0]*64</span><br><span class="line">dpMakeChange([1, 5, 10, 21, 25], 63, minCoins, coinsUsed)</span><br><span class="line">printcoins(63,coinsUsed)</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/learn/" rel="tag"><i class="fa fa-tag"></i> learn</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2025/02/22/%E4%BD%A0%E7%9A%84%E9%A2%9C%E8%89%B2/" rel="next" title="你的颜色">
+                  你的颜色 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Word count total: </span>
+    <span title="Word count total">16k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">29 mins.</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/xiex2024" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '155px',
+  right: 'unset',
+  left: '32px',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#eef',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"xiex2024","repo":"xiex2024.github.io","client_id":"Ov23li49DoR0E9MU6nSd","client_secret":"6fb0b05de52db9d56363fa5b306a4c88068a22ea","admin_user":"xiex2024","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"b34077f2e771e7324054467dfe721233"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":-15,"vOffset":-15},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+</html>

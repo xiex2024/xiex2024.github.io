@@ -155,18 +155,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -356,7 +356,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-03-16 21:22:03" itemprop="dateModified" datetime="2025-03-16T21:22:03+08:00">2025-03-16</time>
+      <time title="Modified: 2025-03-17 21:11:01" itemprop="dateModified" datetime="2025-03-17T21:11:01+08:00">2025-03-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -402,6 +402,152 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://homepage.com/2025/03/17/py-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/OIP.jpg">
+      <meta itemprop="name" content="榭">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="榭的博客">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 榭的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/03/17/py-notes/" class="post-title-link" itemprop="url">py_notes</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2025-03-17 21:17:01 / Modified: 21:19:41" itemprop="dateCreated datePublished" datetime="2025-03-17T21:17:01+08:00">2025-03-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>8.1k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>15 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+<h1 id="字符串处理">字符串处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">s = &#x27;xiex&#x27;</span><br><span class="line">s1 = s.center(2)</span><br><span class="line">print(s1)#数字小于字符串长度则不做处理</span><br><span class="line">s2 = s.center(7)</span><br><span class="line">print(s2.index(&#x27;x&#x27;))#若填充数为奇数则左侧多一个</span><br><span class="line">print(s.center(20))#居中并填充使总长度为20</span><br><span class="line">print(s.ljust(20))#左对齐并填充</span><br><span class="line">print(s.rjust(20))#右对齐并填充</span><br></pre></td></tr></table></figure>
+<h1 id="集合运算和处理">集合运算和处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">setA = &#123;2,1,3&#125;;setB = &#123;3,4,5&#125;</span><br><span class="line">print(setA|setB)#并集，运算。而A.union(B)作为方法有同样的功能</span><br><span class="line">print(setA&amp;setB)#交集，A.intersectiom(B)</span><br><span class="line">print(setA-setB)#仅出现于setA的元素</span><br><span class="line">print(setA&lt;=setB)#setA是否包含于setB</span><br><span class="line">print(&#123;1,2,3,4,5&#125;.pop())#“随机”移除，但实际删除集合中的“第一个”元素，由于集合的无序性而称为随机，例如纯数字是会输出最小的</span><br><span class="line">print(&#123;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;,&#x27;d&#x27;,&#x27;e&#x27;,&#x27;f&#x27;,&#x27;g&#x27;&#125;.pop())#此处即为随机</span><br></pre></td></tr></table></figure>
+<h1 id="字典处理">字典处理</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dict = &#123;1:4,&#x27;a&#x27;:&#x27;c&#x27;&#125;</span><br><span class="line">print(&#x27;c&#x27; in dict ,1 in dict)#直接用in所查找的是是否在索引中</span><br><span class="line">itemdict = &#123;&quot;item&quot;:&quot;banana&quot;,&quot;cost&quot;:24&#125;</span><br><span class="line">print(&quot;The %(item)s costs %(cost)7.1f cents&quot; % itemdict)# %(name)d可以获取字典中name所代表的值</span><br></pre></td></tr></table></figure>
+<h1 id="人为抛出一条异常信息">人为抛出一条异常信息</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">anumber = int(input())</span><br><span class="line">if anumber &lt; 0:</span><br><span class="line">    raise RuntimeError(&quot;You can&#x27;t use a negative number&quot;)</span><br><span class="line"></span><br><span class="line">from math import sqrt</span><br><span class="line">def squareroot(n):#牛顿法求平方根</span><br><span class="line">    root = n/2 #initial guess will be 1/2 of n</span><br><span class="line">    for k in range(20):</span><br><span class="line">        root = (1/2)*(root + (n / root))</span><br><span class="line">    return root</span><br><span class="line">print((squareroot(5)-sqrt(5))*(10**10))</span><br></pre></td></tr></table></figure>
+<h1 id="面向对象">面向对象</h1>
+<p>python为所有的类提供了一套标准的工作方法，但可能在一些情况下没有正常工作，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class fraction:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">print(fraction(2,5))#返回指向的地址字符串</span><br></pre></td></tr></table></figure>
+<p>此处__str__方法即为内置的方法，指示了如何将对象转化为字符串</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class fraction1:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">    def __str__(self):</span><br><span class="line">        return str(self.top)+&quot;/&quot;+str(self.bottom)</span><br><span class="line">    def __add__(self,other):#加法运算</span><br><span class="line">        top1 = self.top*other.bottom + \</span><br><span class="line">               other.top*self.bottom#\可以作为续行符</span><br><span class="line">        bottom1 = self.bottom*other.bottom</span><br><span class="line">        return fraction1(top1,bottom1)#可以加入用找最小公倍数的方法化简来优化,但这部分的重点不在此处</span><br><span class="line">print(fraction1(2,5))</span><br><span class="line">print(fraction1(2,5).__str__())</span><br><span class="line">print(str(fraction1(2,5)))</span><br><span class="line">print(fraction1(1,2)+fraction1(1,5))</span><br></pre></td></tr></table></figure>
+<h2 id="浅相等与深相等">浅相等与深相等</h2>
+<p>对于两个对象来说，直接==比较是比较两者是否引用了同一个对象，而非对值的比较</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a = fraction1(3,5)</span><br><span class="line">b = fraction1(3,5)</span><br><span class="line">print(a==b)</span><br><span class="line">#建立__eq__方法，进行值的比较</span><br><span class="line">class frac:</span><br><span class="line">    def __init__(self, top,bottom):</span><br><span class="line">        self.top = top</span><br><span class="line">        self.bottom = bottom</span><br><span class="line">    def __eq__(self, other):</span><br><span class="line">        return self.top == other.top and self.bottom == other.bottom#仍不完善，可能输入的并非最简分数</span><br><span class="line">a = frac(3,5)</span><br><span class="line">b = frac(3,5)</span><br><span class="line">print(a==b)</span><br></pre></td></tr></table></figure>
+<p>fraction的完整实现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">def gcd(m,n):</span><br><span class="line">    while m%n != 0:</span><br><span class="line">        oldm = m</span><br><span class="line">        oldn = n</span><br><span class="line"></span><br><span class="line">        m = oldn</span><br><span class="line">        n = oldm%oldn</span><br><span class="line">    return n</span><br><span class="line">class Fraction:</span><br><span class="line">    def __init__(self, top, bottom):</span><br><span class="line">        self.num = top</span><br><span class="line">        self.den = bottom</span><br><span class="line"></span><br><span class="line">    def __str__(self):</span><br><span class="line">        return str(self.num) + &quot;/&quot; + str(self.den)</span><br><span class="line"></span><br><span class="line">    def show(self):</span><br><span class="line">        print(self.num, &quot;/&quot;, self.den)</span><br><span class="line"></span><br><span class="line">    def __add__(self, otherfraction):</span><br><span class="line">        newnum = self.num * otherfraction.den + \</span><br><span class="line">        self.den * otherfraction.num</span><br><span class="line">        newden = self.den * otherfraction.den</span><br><span class="line">        common = gcd(newnum, newden)</span><br><span class="line">        return Fraction(newnum//common, newden//common)</span><br><span class="line"></span><br><span class="line">    def __eq__(self, other):</span><br><span class="line">        firstnum = self.num * other.den</span><br><span class="line">        secondnum = other.num * self.den</span><br><span class="line">        return firstnum == secondnum</span><br></pre></td></tr></table></figure>
+<h2 id="继承以逻辑门为例">继承：以逻辑门为例</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line">class LogicGate:#超类LogicGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        self.label = n</span><br><span class="line">        self.output = None</span><br><span class="line">    def getLabel(self):</span><br><span class="line">        return self.label</span><br><span class="line">    def getOutput(self):</span><br><span class="line">        self.output = self.performGateLogic()</span><br><span class="line">        return self.output</span><br><span class="line"></span><br><span class="line">class BinaryGate(LogicGate):#有两个输入的门（与&amp;或门），继承LogicGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)#先调用父类的构造方法</span><br><span class="line"></span><br><span class="line">        self.pinA = None</span><br><span class="line">        self.pinB = None</span><br><span class="line"></span><br><span class="line">    def getPinA(self):</span><br><span class="line">        if self.pinA is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin A: input for gate&#x27; + \</span><br><span class="line">                            self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pinA.getFrom().getOutput()</span><br><span class="line">    def getPinB(self):</span><br><span class="line">        if self.pinB is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin B: input for gate&#x27; + \</span><br><span class="line">                         self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pinB.getFrom().getOutput()</span><br><span class="line"></span><br><span class="line">class UnaryGate(LogicGate):#非门</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">        self.pin = None</span><br><span class="line">    def getPin(self):</span><br><span class="line">        if self.pin is None:</span><br><span class="line">            return int(input(&#x27;Enter Pin: input for gate &#x27; + self.getLabel() + &#x27;--&gt;&#x27;))</span><br><span class="line">        else:</span><br><span class="line">            return self.pin.getFrom().getOutput()#即返回连接器所连接的上一个类的输出</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class AndGate(BinaryGate):#与门，继承BinaryGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        a = self.getPinA()</span><br><span class="line">        b = self.getPinB()</span><br><span class="line">        if a==1 and b==1:</span><br><span class="line">            return 1</span><br><span class="line">        else:</span><br><span class="line">            return 0</span><br><span class="line"></span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">    # 在BinaryGate 类中，逻辑门有两个输入，但连接器必须只连接其中一个。如果两个都能连接，那么默认选择pinA。如果pinA 已经有了连接，就选择pinB。如果两个输入都已有连接，则无法连接逻辑门。</span><br><span class="line">        if self.pinA == None:</span><br><span class="line">            self.pinA = source</span><br><span class="line">        else:</span><br><span class="line">            if self.pinB == None:</span><br><span class="line">                self.pinB = source</span><br><span class="line">            else:</span><br><span class="line">                raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line"># g1 = AndGate(&#x27;G1&#x27;)</span><br><span class="line"># print(g1.getOutput())</span><br><span class="line"></span><br><span class="line">class OrGate(BinaryGate):#与门，继承BinaryGate</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        a = self.getPinA()</span><br><span class="line">        b = self.getPinB()</span><br><span class="line">        if a==0 and b==0:</span><br><span class="line">            return 0</span><br><span class="line">        else:</span><br><span class="line">            return 1</span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">        if self.pinA == None:</span><br><span class="line">            self.pinA = source</span><br><span class="line">        else:</span><br><span class="line">            if self.pinB == None:</span><br><span class="line">                self.pinB = source</span><br><span class="line">            else:</span><br><span class="line">                raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class NotGate(UnaryGate):</span><br><span class="line">    def __init__(self,n):</span><br><span class="line">        super().__init__(n)</span><br><span class="line">    def performGateLogic(self):</span><br><span class="line">        pin = self.getPin()</span><br><span class="line">        if pin == 1:</span><br><span class="line">            return 0</span><br><span class="line">        else:</span><br><span class="line">            return 1</span><br><span class="line">    def setNextPin(self, source):</span><br><span class="line">        if self.pin == None:</span><br><span class="line">            self.pin = source</span><br><span class="line">        else:</span><br><span class="line">            raise RuntimeError(&quot;Error: NO EMPTY PINS&quot;)</span><br><span class="line"></span><br><span class="line">class Connector:#连接两个逻辑门，内部包含LogicGate的实例但不在继承关系中</span><br><span class="line">    def __init__(self,fgate,tgate):</span><br><span class="line">        self.fromgate = fgate</span><br><span class="line">        self.togate = tgate</span><br><span class="line">        tgate.setNextPin(self)#此处传递参数self,即让tgate的值设定为连接器这个类的实例</span><br><span class="line"></span><br><span class="line">    def getFrom(self):</span><br><span class="line">        return self.fromgate</span><br><span class="line"></span><br><span class="line">    def getTO(self):</span><br><span class="line">        return self.togate</span><br><span class="line"></span><br><span class="line">g1 = AndGate(&quot;G1&quot;)</span><br><span class="line">g2 = AndGate(&quot;G2&quot;)</span><br><span class="line">g3 = OrGate(&quot;G3&quot;)</span><br><span class="line">g4 = NotGate(&quot;G4&quot;)</span><br><span class="line">c1 = Connector(g1,g3)</span><br><span class="line">c2 = Connector(g2,g3)</span><br><span class="line">c3 = Connector(g3,g4)</span><br><span class="line">print(g4.getOutput())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="算法">算法</h1>
+<h2 id="递归">递归</h2>
+<p>递归的三个原则为：</p>
+<p>①基本情况，即无需处理就可以直接return的情况</p>
+<p>②算法会改变待处理数据的状态，使其更接近于基本状态</p>
+<p>③调用自己</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def toStr(n,base):#递归示例，转换进制。</span><br><span class="line">    convertstring = &#x27;0123456789ABCDEF&#x27;</span><br><span class="line">    if n&lt;base:</span><br><span class="line">        return convertstring[n]</span><br><span class="line">    else:</span><br><span class="line">        return toStr(n//base,base)+convertstring[n%base]</span><br></pre></td></tr></table></figure>
+<p><img src="image-20250316214546049.png" /></p>
+<p>基本状态为一位数，于是不断将原整数整除10</p>
+<p>用栈来储存结果，那么python会将函数的返回值储存在栈的顶端</p>
+<p><img src="image-20250316220244264.png" /></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rStack = Stack()#将储存的结果压入栈中</span><br><span class="line">def toStr(n, base):</span><br><span class="line">    convertString = &quot;0123456789ABCDEF&quot;</span><br><span class="line">    if n &lt; base:</span><br><span class="line">        rStack.push(convertString[n])</span><br><span class="line">    else:</span><br><span class="line">        rStack.push(convertString[n % base])</span><br><span class="line">        toStr(n // base, base)</span><br></pre></td></tr></table></figure>
+<p>示例：汉诺塔</p>
+<p>其基本思路是，若有n层，从a挪到c，那问题可以分解为：</p>
+<p>n-1层从a到b <span class="math inline">\(-&gt;\)</span> 1层从a到c
+<span class="math inline">\(-&gt;\)</span> n-1层从b到c</p>
+<p>代码如下（五层为例）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#汉诺塔</span><br><span class="line">def moveTower(height, fromPole, toPole, withPole):</span><br><span class="line">    if height &gt;= 1:</span><br><span class="line">        moveTower(height-1, fromPole, withPole, toPole)</span><br><span class="line">        moveDisk(fromPole, toPole)</span><br><span class="line">        moveTower(height-1, withPole, toPole, fromPole)</span><br><span class="line">def moveDisk(fromPole, toPole):</span><br><span class="line">    print(fromPole+&#x27;-&gt;&#x27;+toPole)</span><br><span class="line">moveTower(5,&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;)</span><br></pre></td></tr></table></figure>
+<h2 id="动态规划">动态规划</h2>
+<p>以找零钱为例，采用递归算法结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def recMC(coinValueList, change):</span><br><span class="line">	minCoins = change</span><br><span class="line">	if change in coinValueList:</span><br><span class="line">		return 1</span><br><span class="line">	else:</span><br><span class="line">		for i in [c for c in coinValueList if c &lt;= change]:</span><br><span class="line">			numCoins = 1 + recMC(coinValueList, change-i)</span><br><span class="line">			if numCoins &lt; minCoins:</span><br><span class="line">				minCoins = numCoins</span><br><span class="line">	return minCoins</span><br><span class="line"></span><br><span class="line">recMC([1, 5, 10, 25], 63)</span><br></pre></td></tr></table></figure>
+<p>问题分解为：（change-i）的最小硬币数+1，其中i为一枚硬币的面值，故而循环多次直到遍历每一种可能。</p>
+<p>该方法的问题在于有太多次对相同方案的遍历，如下图</p>
+<p><img src="image-20250317153318112.png" /></p>
+<p>相同的节点出现了多次，而每次出现都会进行完全一致而冗余的计算，这大大降低了算法的效率。</p>
+<p>对此我们进行“针对性”的优化，即用<code>knownResults</code>储存每个节点所对应的数值，在计算时先查找这个节点是否已被计算过，以减少冗余的计算。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">def recMC(coinValueList, change, knownResults):</span><br><span class="line">    minCoins = change</span><br><span class="line">    if change in coinValueList:</span><br><span class="line">        return 1</span><br><span class="line">    elif knownResults[change] &gt; 0:</span><br><span class="line">        return knownResults[change]</span><br><span class="line">    else:</span><br><span class="line">        for i in [c for c in coinValueList if c &lt;= change]:</span><br><span class="line">            numCoins = 1 + recMC(coinValueList, change-i, knownResults)</span><br><span class="line">            if numCoins &lt; minCoins:</span><br><span class="line">                minCoins = numCoins</span><br><span class="line">                knownResults[change] = numCoins</span><br><span class="line">    return minCoins</span><br><span class="line"></span><br><span class="line">recMC([1, 5, 10, 25], 63, [0]*64)</span><br></pre></td></tr></table></figure>
+<p>在这里介绍动态规划（dp），与上述算法不同，在这个问题上，递归采用了更为系统的储存方式，其会储存从1开始一直到change的每一个值对应的最少硬币数。</p>
+<p>对于每一个值，其需要硬币的最小值，来自于这个值减去一个硬币的面值后所有情况的最小值+1。如对于（11）来说，为（1）+1，（6）+1，（10）+1，分别对应减去的硬币为10，5，1的情况，因此代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def dpMakeChange(coinValueList, change, minCoins):</span><br><span class="line">    for cents in range(change+1):</span><br><span class="line">        coinCount = cents</span><br><span class="line">        for j in [c for c in coinValueList if c &lt;= cents]:</span><br><span class="line">            if minCoins[cents-j] + 1 &lt; coinCount:</span><br><span class="line">                coinCount = minCoins[cents - j]+1</span><br><span class="line">            minCoins[cents] = coinCount</span><br><span class="line">    return minCoins[change]</span><br></pre></td></tr></table></figure>
+<p>如果我们需要得到对于每一个值，在硬币数量最少的情况下所有硬币的面值，我们实际上只需要储存新增的硬币的面值即可递推得到所有的面值，修改代码如下；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">def dpMakeChange(coinValueList, change, minCoins, coinsUsed):</span><br><span class="line">    for cents in range(change + 1):</span><br><span class="line">        coinCount = cents</span><br><span class="line">        newcoin = 1</span><br><span class="line">        for j in [c for c in coinValueList if c &lt;= cents]:</span><br><span class="line">            if minCoins[cents - j] + 1 &lt; coinCount:</span><br><span class="line">                coinCount = minCoins[cents - j] + 1</span><br><span class="line">                newcoin = j</span><br><span class="line">            minCoins[cents] = coinCount</span><br><span class="line">            coinsUsed[cents] = newcoin</span><br><span class="line">    return minCoins[change]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def printcoins(change, coinsUsed):</span><br><span class="line">    while change &gt; 0:</span><br><span class="line">        print(coinsUsed[change],end = &#x27; &#x27;)</span><br><span class="line">        change -= coinsUsed[change]</span><br><span class="line"></span><br><span class="line">coinsUsed = [0]*64</span><br><span class="line">minCoins = [0]*64</span><br><span class="line">dpMakeChange([1, 5, 10, 21, 25], 63, minCoins, coinsUsed)</span><br><span class="line">printcoins(63,coinsUsed)</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -974,14 +1120,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Word count total: </span>
-    <span title="Word count total">8k</span>
+    <span title="Word count total">16k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">14 mins.</span>
+    <span title="Reading time total">29 mins.</span>
   </span>
 </div>
 <div class="busuanzi-count">
