@@ -37,7 +37,7 @@
 <meta property="og:image" content="http://homepage.com/2025/03/17/py-notes/image-20250327173026645.png">
 <meta property="og:image" content="http://homepage.com/2025/03/17/py-notes/image-20250328161147281.png">
 <meta property="article:published_time" content="2025-03-17T13:17:01.000Z">
-<meta property="article:modified_time" content="2025-03-28T10:00:11.219Z">
+<meta property="article:modified_time" content="2025-03-28T13:18:19.097Z">
 <meta property="article:author" content="榭">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
@@ -255,7 +255,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-03-28 18:00:11" itemprop="dateModified" datetime="2025-03-28T18:00:11+08:00">2025-03-28</time>
+      <time title="Modified: 2025-03-28 21:18:19" itemprop="dateModified" datetime="2025-03-28T21:18:19+08:00">2025-03-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -393,7 +393,7 @@ n)\)</span>的增量序列，甚至是否存在也不好说？</p>
 class="math inline">\(\frac{n}{2}\)</span>个子列表，再划分为<span
 class="math inline">\(\frac{n}{4}\)</span>个子列表……直到整个列表完成排序。代码如下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">def shellSort(alist):</span><br><span class="line">    sublistcount = len(alist)//2</span><br><span class="line">    while sublistcount &gt; 0:</span><br><span class="line"></span><br><span class="line">      for startposition in range(sublistcount):</span><br><span class="line">        gapInsertionSort(alist,startposition,sublistcount)</span><br><span class="line"></span><br><span class="line">      print(&quot;After increments of size&quot;,sublistcount,&quot;The list is&quot;,alist)</span><br><span class="line">      sublistcount = sublistcount // 2</span><br><span class="line"></span><br><span class="line">def gapInsertionSort(alist,start,gap):</span><br><span class="line">    for i in range(start+gap,len(alist),gap):</span><br><span class="line">        currentvalue = alist[i]</span><br><span class="line">        position = i</span><br><span class="line"></span><br><span class="line">        while position&gt;=gap and alist[position-gap]&gt;currentvalue:</span><br><span class="line">            alist[position]=alist[position-gap] </span><br><span class="line">            position = position-gap</span><br><span class="line"></span><br><span class="line">        alist[position]=currentvalue</span><br></pre></td></tr></table></figure>
-<p>是通过对插入的改良实现的，因此shellSort方法中调用了插入排序的内容。</p>
+<p>希尔排序是通过对插入的改良实现的，因此shellSort方法中调用了插入排序的内容。</p>
 
     </div>
 
