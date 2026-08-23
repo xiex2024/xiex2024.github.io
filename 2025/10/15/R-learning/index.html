@@ -27,22 +27,24 @@
 <meta property="og:site_name" content="榭的博客">
 <meta property="og:description" content="介于r语言在统计绘图上的强大功能，决定以实用为目的进行粗浅的学习，所使用的教材选择《R语言实战》。代码见RScripts（不要轻易运行以免出现一些奇怪的东西）。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260722160947966-1784902736325-3.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260722164843920-1784902736325-4.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260723133302098-1784902736325-7.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260723134232942-1784902736325-6.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724104928488.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724104951157.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724105031770.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724105204010.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724110327366.png">
-<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260724111223621.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20251014184009199-1784902736324-1.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20251014202800652-1784902736325-5.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260722160947966-1784902736325-3.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260722164843920-1784902736325-4.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260723133302098-1784902736325-7.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260723134232942-1784902736325-6.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724104928488.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724104951157.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724105031770.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724105204010.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724110327366.png">
+<meta property="og:image" content="http://homepage.com/2025/10/15/R-learning/image-20260724111223621.png">
 <meta property="article:published_time" content="2025-10-15T10:30:49.000Z">
-<meta property="article:modified_time" content="2026-07-24T14:19:04.968Z">
+<meta property="article:modified_time" content="2026-07-25T06:27:38.781Z">
 <meta property="article:author" content="榭">
 <meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://homepage.com/2025/10/15/R-learning/R-learning/image-20260722160947966-1784902736325-3.png">
+<meta name="twitter:image" content="http://homepage.com/2025/10/15/R-learning/image-20251014184009199-1784902736324-1.png">
 
 
 <link rel="canonical" href="http://homepage.com/2025/10/15/R-learning/">
@@ -200,7 +202,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -289,7 +291,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-07-24 22:19:04" itemprop="dateModified" datetime="2026-07-24T22:19:04+08:00">2026-07-24</time>
+      <time title="Modified: 2026-07-25 14:27:38" itemprop="dateModified" datetime="2026-07-25T14:27:38+08:00">2026-07-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -336,10 +338,10 @@
 <span id="more"></span>
 <h1 id="introduce">1 Introduce</h1>
 <h2 id="帮助功能">1.1 帮助功能</h2>
-<p><img data-src="R-learning/image-20251014184009199-1784902736324-1.png" /></p>
+<p><img data-src="image-20251014184009199-1784902736324-1.png" /></p>
 <p>函数<code>help.start()</code>会打开浏览器窗口，在其中可以查看帮助手册，问题集以及参考材料，其余的参考表格。<em>尝试后发现，若在VScode中使用该命令，会直接在VScode的窗口中打开该html文件。</em></p>
 <h2 id="工作空间">1.2 工作空间</h2>
-<p>即当前R的工作环境，其储存着所有定义的对象，但会话结束时，可将当前工作空间保存到一个镜像中并在下次载入。管理工作空间的函数如下。<img data-src="R-learning/image-20251014185015694-1784902736325-2.png" /></p>
+<p>即当前R的工作环境，其储存着所有定义的对象，但会话结束时，可将当前工作空间保存到一个镜像中并在下次载入。管理工作空间的函数如下。<img data-src="image-20251014185015694-1784902736325-2.png" /></p>
 <p>注意到，路径应该使用正斜杠<code>/</code>，反斜杠<code>\</code>会被作为转义符，此外<code>setwd()</code>函数只能切换目录而不能常见新的目录。</p>
 <h2 id="包">1.3 包</h2>
 <p>第一次安装某一个包：<code>install.packages("*")</code></p>
@@ -352,7 +354,7 @@
 <p>R可以处理的数据类型包括数值，字符，逻辑型，复数，字节。</p>
 <p>以下图的数据集为例</p>
 <p><a id = "表2-1"></a></p>
-<p><img data-src="R-learning/image-20251014202800652-1784902736325-5.png" /></p>
+<p><img data-src="image-20251014202800652-1784902736325-5.png" /></p>
 <p>PatientID是行/实例型变量，AdmDate为日期型变量，Age是连续型（定量型）变量，Daibetes是名义变量，Status是顺序变量。名义变量和顺序变量都是分类变量，但顺序变量具有自然的顺序性。</p>
 <p>R会将实例标识符称为rowname，分类变量称为因子。</p>
 <h2 id="数据结构">2.1 数据结构</h2>
@@ -428,7 +430,7 @@ href="#表2-1">表2-1</a>中显示的数据集即一个数据框。数据框可�
 <h3 id="带分隔符的文本文件">2.3.2 带分隔符的文本文件</h3>
 <p>用<code>mydata &lt;-read.table(file,option)</code>导入带分隔符的文本文件</p>
 <figure>
-<img data-src="R-learning/image-20260722160947966-1784902736325-3.png"
+<img data-src="image-20260722160947966-1784902736325-3.png"
 alt="image-20260722160947966" />
 <figcaption aria-hidden="true">image-20260722160947966</figcaption>
 </figure>
@@ -445,7 +447,7 @@ alt="image-20260722160947966" />
 <h3 id="值标签">2.4.2 值标签</h3>
 <h2 id="处理数据对象的实用函数">2.5 处理数据对象的实用函数</h2>
 <figure>
-<img data-src="R-learning/image-20260722164843920-1784902736325-4.png"
+<img data-src="image-20260722164843920-1784902736325-4.png"
 alt="image-20260722164843920" />
 <figcaption aria-hidden="true">image-20260722164843920</figcaption>
 </figure>
@@ -470,7 +472,7 @@ alt="image-20260722164843920" />
 <h2 id="日期值">3.5 日期值</h2>
 <p>用<code>as.Date(x,"input_format")</code>将字符串转化为日期变量，默认的<code>input_format</code>为<em>yyyy-mm-dd</em>，日期值可以执行算术运算</p>
 <figure>
-<img data-src="R-learning/image-20260723133302098-1784902736325-7.png"
+<img data-src="image-20260723133302098-1784902736325-7.png"
 alt="image-20260723133302098" />
 <figcaption aria-hidden="true">image-20260723133302098</figcaption>
 </figure>
@@ -482,7 +484,7 @@ alt="image-20260723133302098" />
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">difftime<span class="punctuation">(</span>date1<span class="punctuation">,</span>date2<span class="punctuation">,</span>units<span class="operator">=</span><span class="string">&quot;weeks&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 <h2 id="类型转换">3.6 类型转换</h2>
 <figure>
-<img data-src="R-learning/image-20260723134232942-1784902736325-6.png"
+<img data-src="image-20260723134232942-1784902736325-6.png"
 alt="image-20260723134232942" />
 <figcaption aria-hidden="true">image-20260723134232942</figcaption>
 </figure>
@@ -516,41 +518,35 @@ alt="image-20260723134232942" />
 <h2 id="数值处理函数和字符处理函数">4.1 数值处理函数和字符处理函数</h2>
 <h3 id="数学函数">4.1.1 数学函数</h3>
 <figure>
-<img data-src="R-learning/image-20260724104928488.png"
-alt="image-20260724104928488" />
+<img data-src="image-20260724104928488.png" alt="image-20260724104928488" />
 <figcaption aria-hidden="true">image-20260724104928488</figcaption>
 </figure>
 <figure>
-<img data-src="R-learning/image-20260724104951157.png"
-alt="image-20260724104951157" />
+<img data-src="image-20260724104951157.png" alt="image-20260724104951157" />
 <figcaption aria-hidden="true">image-20260724104951157</figcaption>
 </figure>
 <h3 id="统计函数">4.1.2 统计函数</h3>
 <figure>
-<img data-src="R-learning/image-20260724105031770.png"
-alt="image-20260724105031770" />
+<img data-src="image-20260724105031770.png" alt="image-20260724105031770" />
 <figcaption aria-hidden="true">image-20260724105031770</figcaption>
 </figure>
 <h3 id="概率函数">4.1.3 概率函数</h3>
 <p>概率函数形如<code>[dpqr]&lt;概率分布填写&gt;()</code></p>
 <p><code>d</code>为密度函数，<code>p</code>为分布函数，<code>q</code>为分位数函数，<code>r</code>为生成随机数</p>
 <figure>
-<img data-src="R-learning/image-20260724105204010.png"
-alt="image-20260724105204010" />
+<img data-src="image-20260724105204010.png" alt="image-20260724105204010" />
 <figcaption aria-hidden="true">image-20260724105204010</figcaption>
 </figure>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>ggplot2<span class="punctuation">)</span></span><br><span class="line">x<span class="operator">&lt;-</span>seq<span class="punctuation">(</span>from <span class="operator">=</span> <span class="operator">-</span><span class="number">3</span><span class="punctuation">,</span>to <span class="operator">=</span><span class="number">3</span><span class="punctuation">,</span>by <span class="operator">=</span> <span class="number">0.1</span><span class="punctuation">)</span></span><br><span class="line">y <span class="operator">=</span> dnorm<span class="punctuation">(</span>x<span class="punctuation">)</span></span><br><span class="line">data <span class="operator">&lt;-</span>data.frame<span class="punctuation">(</span>fx<span class="operator">=</span>x<span class="punctuation">,</span>y<span class="operator">=</span>y<span class="punctuation">)</span></span><br><span class="line">ggplot<span class="punctuation">(</span>data <span class="operator">=</span> data<span class="punctuation">,</span>aes<span class="punctuation">(</span>x<span class="punctuation">,</span>y<span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">+</span></span><br><span class="line">    geom_line<span class="punctuation">(</span><span class="punctuation">)</span><span class="operator">+</span></span><br><span class="line">    labs<span class="punctuation">(</span>x <span class="operator">=</span> <span class="string">&quot;Normal Deviate&quot;</span><span class="punctuation">,</span></span><br><span class="line">        y<span class="operator">=</span><span class="string">&quot;Density&quot;</span><span class="punctuation">)</span><span class="operator">+</span></span><br><span class="line">    scale_x_continuous<span class="punctuation">(</span>breaks <span class="operator">=</span> seq<span class="punctuation">(</span><span class="operator">-</span><span class="number">3</span><span class="punctuation">,</span><span class="number">3</span><span class="punctuation">,</span><span class="number">1</span><span class="punctuation">)</span><span class="punctuation">)</span></span><br><span class="line">pnorm<span class="punctuation">(</span><span class="number">1.96</span><span class="punctuation">)</span></span><br><span class="line">qnorm<span class="punctuation">(</span><span class="number">.9</span><span class="punctuation">,</span>mean<span class="operator">=</span> <span class="number">500</span><span class="punctuation">,</span>sd <span class="operator">=</span> <span class="number">100</span><span class="punctuation">)</span></span><br><span class="line">rnorm<span class="punctuation">(</span><span class="number">50</span><span class="punctuation">,</span>mean <span class="operator">=</span> <span class="number">50</span><span class="punctuation">,</span>sd <span class="operator">=</span> <span class="number">10</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 <p>生成随机数可以用<code>set.seed()</code>设定随机数种子</p>
 <h3 id="字符处理函数">4.1.4 字符处理函数</h3>
 <figure>
-<img data-src="R-learning/image-20260724110327366.png"
-alt="image-20260724110327366" />
+<img data-src="image-20260724110327366.png" alt="image-20260724110327366" />
 <figcaption aria-hidden="true">image-20260724110327366</figcaption>
 </figure>
 <h3 id="其他实用函数">4.1.5 其他实用函数</h3>
 <figure>
-<img data-src="R-learning/image-20260724111223621.png"
-alt="image-20260724111223621" />
+<img data-src="image-20260724111223621.png" alt="image-20260724111223621" />
 <figcaption aria-hidden="true">image-20260724111223621</figcaption>
 </figure>
 <h3 id="将函数应用于矩阵和数据框">4.1.6 将函数应用于矩阵和数据框</h3>
@@ -633,14 +629,14 @@ alt="image-20260724111223621" />
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Word count total: </span>
-    <span title="Word count total">42k</span>
+    <span title="Word count total">44k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">1:16</span>
+    <span title="Reading time total">1:20</span>
   </span>
 </div>
 <div class="busuanzi-count">
